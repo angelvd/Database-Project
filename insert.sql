@@ -1,0 +1,150 @@
+USE UncoverBionic
+
+INSERT INTO Customer VALUES 
+('CU001', 'Lili', 081111111111, 'Cempaka Street', 'Female', 'lili@gmail.com', '2002-12-1'), 
+('CU002', 'Nana', 082222222222, 'Mawar Street', 'Female', 'nana@gmail.com', '2002-12-2'), 
+('CU003', 'Nano', 083333333333, 'Anggrek Street', 'Male', 'nano@gmail.com', '2001-12-4'), 
+('CU004', 'Albert', 084444444444, 'Kenanga Street', 'Male', 'albert@gmail.com', '2000-12-6'), 
+('CU005', 'Nicholas', 085555555555, 'Melati Street', 'Male', 'nicholas@gmail.com', '2001-12-17'), 
+('CU006', 'Jesslyn', 086666666666, 'Violet Street', 'Female', 'jesslyn@gmail.com', '2002-08-21'), 
+('CU007', 'Felicia', 087777777777, 'Teratai Street', 'Female', 'felicia@gmail.com', '2002-09-22'), 
+('CU008', 'Joshua', 088888888888, 'Daisy Street', 'Male', 'joshua@gmail.com', '2000-07-11'), 
+('CU009', 'David', 089999999999, 'Tulip Street', 'Male', 'david@gmail.com', '2003-08-22'), 
+('CU010', 'Wiyahya', 081000000000, 'Lavender Street', 'Male', 'wiyahya@gmail.com', '2001-05-18')
+
+INSERT INTO Staff VALUES 
+('ST001', 'Siti', 081222222222, 'Macan Street', 'Female', 'siti@gmail.com', '2001-12-07', 4000000),
+('ST002', 'Shafwah', 081333333333, 'Harimau Street', 'Female', 'shafwah@gmail.com', '2000-11-09', 4000000),
+('ST003', 'Prasetyo', 081444444444, 'Singa Street', 'Male', 'prasetyo@gmail.com', '2002-12-23', 4500000),
+('ST004', 'Jonathan', 081555555555, 'Kucing Street', 'Male', 'jonathan@gmail.com', '2001-11-02', 4000000),
+('ST005', 'Alvin', 081666666666, 'Jaguar Street', 'Male', 'alvin@gmail.com', '2000-01-27', 4500000),
+('ST006', 'Edly', 081777777777, 'Kelinci Street', 'Male', 'edly@gmail.com', '2002-08-26', 5000000),
+('ST007', 'Jessica', 081888888888, 'Buaya Street', 'Female', 'jessica@gmail.com', '2001-09-22', 10000000),
+('ST008', 'Jocelyn', 081999999999, 'Tikus Street', 'Female', 'jocelyn@gmail.com', '2002-08-07', 4000000),
+('ST009', 'Kurniawan', 081211111111, 'Zebra Street', 'Male', 'kurniawan@gmail.com', '2001-03-25', 8500000),
+('ST010', 'Christandy', 081222222222, 'Jerapah Street', 'Male', 'christandy@gmail.com', '2000-01-29', 4500000)
+
+INSERT INTO Vendor VALUES
+('VE001', 'Kayla Tillman', 087111111111, 'Rambutan Street', 'kayla@gmail.com'),
+('VE002', 'Joni Boy', 081122334455, 'Durian Street', 'joni@gmail.com'),
+('VE003', 'Vina Laras', 087222222222, 'Mangga Street', 'vina@gmail.com'),
+('VE004', 'Jojo Valentine', 081212121212, 'Banana Street', 'Jojo@gmail.com' ),
+('VE005', 'Vincent Edly', 0898989898, 'Pear Street', 'Vincent@gmail.com'),
+('VE006', 'Reina Nana', 087333333333, 'Manggis Street', 'reina@gmail.com'),
+('VE007', 'Jett Alvin', 0814141414, 'Dragon Street', 'Jett@gmail.com'),
+('VE008', 'Bernard Yaya', 087444444444, 'Pepaya Street', 'bernard@gmail.com'),
+('VE009', 'Dhimas Anugrah', 087555555555, 'Leci Street', 'dhimas@gmail.com'),
+('VE010', 'Brimstone Jayaselalu', 0819171615, 'Jeruk Street', 'Brimstone@gmail.com')
+
+INSERT INTO BionicType VALUES 
+('TY001', 'Hand', 75),
+('TY002', 'Foot', 60),
+('TY003', 'Leg', 55),
+('TY004', 'Arm', 90),
+('TY005', 'Eye', 88),
+('TY006', 'Hand', 77),
+('TY007', 'Foot', 58),
+('TY008', 'Leg', 89),
+('TY009', 'Arm', 79),
+('TY010', 'Eye', 88)
+
+INSERT INTO Bionic VALUES 
+('BI001', 'Purple', 40, 200000, '2021-11-11', 'TY001'),
+('BI002', 'Red', 47, 400000, '2021-12-02', 'TY002'),
+('BI003', 'Yellow', 32, 150000, '2021-10-27', 'TY003'),
+('BI004', 'Grey', 16, 200000, '2021-10-05', 'TY004'),
+('BI005', 'White', 23, 400000, '2021-10-26', 'TY005'),
+('BI006', 'Green', 10, 500000, '2021-12-25', 'TY006'),
+('BI007', 'Blue', 19, 400000, '2021-10-05', 'TY007'),
+('BI008', 'Black', 22, 400000, '2021-11-10', 'TY008'),
+('BI009', 'Orange', 26, 500000, '2021-12-07', 'TY009'),
+('BI010', 'Brown', 18, 400000, '2021-12-05', 'TY010')
+
+INSERT INTO Purchase VALUES
+('PU001', 'VE001', 'ST001', '2020-01-10'),
+('PU002', 'VE002', 'ST002', '2020-01-12'),
+('PU003', 'VE003', 'ST003', '2020-01-16'),
+('PU004', 'VE004', 'ST004', '2020-02-13'),
+('PU005', 'VE005', 'ST005', '2020-02-20'),
+('PU006', 'VE006', 'ST006', '2020-03-14'),
+('PU007', 'VE007', 'ST007', '2020-04-28'),
+('PU008', 'VE008', 'ST008', '2020-04-29'),
+('PU009', 'VE009', 'ST009', '2020-05-01'),
+('PU010', 'VE010', 'ST010', '2020-06-20'),
+('PU011', 'VE008', 'ST002', '2020-06-21'),
+('PU012', 'VE007', 'ST001', '2020-07-03'),
+('PU013', 'VE003', 'ST005', '2020-07-21'),
+('PU014', 'VE001', 'ST007', '2020-08-22'),
+('PU015', 'VE002', 'ST006', '2020-09-11')
+
+INSERT INTO Sales VALUES
+('SA001', 'CU001', 'ST001', '2021-01-01'),
+('SA002', 'CU002', 'ST002', '2021-01-02'),
+('SA003', 'CU003', 'ST003', '2021-02-10'),
+('SA004', 'CU004', 'ST004', '2021-02-11'),
+('SA005', 'CU005', 'ST005', '2021-02-20'),
+('SA006', 'CU006', 'ST006', '2021-02-21'),
+('SA007', 'CU007', 'ST007', '2021-09-29'),
+('SA008', 'CU008', 'ST008', '2021-08-01'),
+('SA009', 'CU009', 'ST009', '2021-05-18'),
+('SA010', 'CU010', 'ST010', '2021-06-30'),
+('SA011', 'CU001', 'ST001', '2021-04-22'),
+('SA012', 'CU002', 'ST002', '2021-05-28'),
+('SA013', 'CU003', 'ST003', '2021-08-29'),
+('SA014', 'CU004', 'ST004', '2021-03-10'),
+('SA015', 'CU005', 'ST005', '2021-07-12')
+
+INSERT INTO PurchaseDetail VALUES
+('PU001', 'BI001', 'Purple', 12),
+('PU001', 'BI002', 'Red', 12),
+('PU002', 'BI003', 'Yellow', 15),
+('PU003', 'BI004', 'Grey', 14),
+('PU003', 'BI005', 'White', 10),
+('PU004', 'BI006', 'Yellow', 15),
+('PU004', 'BI007', 'Blue', 10),
+('PU005', 'BI008', 'Black', 11),
+('PU006', 'BI009', 'Orange', 18),
+('PU007', 'BI003', 'Yellow', 10),
+('PU011', 'BI001', 'Purple', 12),
+('PU011', 'BI002', 'Red', 12),
+('PU011', 'BI003', 'Yellow', 10),
+('PU011', 'BI004', 'Grey', 10),
+('PU012', 'BI003', 'Yellow', 11),
+('PU012', 'BI005', 'White', 10),
+('PU012', 'BI007', 'Blue', 4),
+('PU013', 'BI004', 'Grey', 5),
+('PU013', 'BI006', 'Green', 10),
+('PU014', 'BI006', 'Green', 17),
+('PU014', 'BI008', 'Black', 17),
+('PU015', 'BI003', 'Yellow', 14),
+('PU015', 'BI005', 'White', 15),
+('PU015', 'BI004', 'Grey', 11),
+('PU015', 'BI010', 'Brown', 12)
+
+
+INSERT INTO SalesDetail VALUES
+('SA001', 'BI001', 'Purple', 6),
+('SA001', 'BI002', 'Red', 6),
+('SA002', 'BI004', 'Grey', 7),
+('SA002', 'BI005', 'White', 5),
+('SA003', 'BI007', 'Blue', 5),
+('SA003', 'BI008', 'Black', 5),
+('SA003', 'BI003', 'Yellow', 5),
+('SA004', 'BI001', 'Purple', 6),
+('SA004', 'BI002', 'Red', 6),
+('SA005', 'BI004', 'Grey', 5),
+('SA005', 'BI003', 'Yellow', 5),
+('SA006', 'BI005', 'White', 5),
+('SA006', 'BI006', 'Green', 5),
+('SA007', 'BI006', 'Green', 7),
+('SA007', 'BI003', 'Yellow', 7),
+('SA008', 'BI005', 'White', 5),
+('SA008', 'BI006', 'Green', 5),
+('SA008', 'BI008', 'Black', 8),
+('SA009', 'BI004', 'Grey', 5),
+('SA010', 'BI010', 'Brown', 6),
+('SA011', 'BI003', 'Yellow', 7),
+('SA012', 'BI006', 'Yellow', 7),
+('SA013', 'BI009', 'Orange', 4),
+('SA014', 'BI003', 'Yellow', 5),
+('SA015', 'BI005', 'White', 5)
